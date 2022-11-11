@@ -1,6 +1,10 @@
 body{
     scroll-behavior: smooth;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+html{
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -29,4 +33,60 @@ label{
 .bg-info{
     width: 100%;
     display: block;
+}
+.toastify{
+    width: 350px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s cubic-bezier(1,-0.21, 0, 1.01);
+    gap: 10px;
+    z-index: 9999999;
+}
+.feather{
+    display: inline-block;
+}
+.slide{
+    transform: translateX(200%);
+}
+.remove{
+    transform: translateX(0px);
+}
+.wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0,0.9);
+}
+.wrapper-body{
+    width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: aliceblue;
+    position: relative;
+}
+.wrapper{
+    transition: all .4s ease;
+
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.close:active{
+    box-shadow: 1px 1px 5px blue;
+}
+.cancel{
+    width: 30px;
+}
+.none{
+    transform: translateY(-200%);
 }

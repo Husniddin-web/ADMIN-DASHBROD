@@ -15,7 +15,33 @@
     <title>Admin Dashbord</title>
   </head>
   <body>
+    <!-- alert -->
+    <div class="toastify slide">
+      <svg  width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <h4 class="text"></h4>
+    </div>
+       <!-- modal -->
+    <div class="wrapper none">
+      <div class="wrapper-body">
+        <span class="close"><img src="./img/cancel.svg" class="cancel" alt="rasm"></span>
+        <form action="#" class="form-edit">
+          <label for="name" class="name">Enter name</label>
+          <input class="form-control" id="userEdit" type="text"
+          placeholder="enter name ...."  ">
+          <label for="number" class="number">Enter score</label>
+          <input class="form-control" id="userScore" required max="10" type="number"
+          placeholder="enter scroe ...."  ">
+          <label for="email" class="email">Enter email</label>
+          <input class="form-control" id="userEmail" type="email"
+          placeholder="enter email ...."  ">
+          <button class="btn bg-info" type="submit">
+            Add information
+          </button>
+        </form>
+      </div>
+    </div>
     <header>
+   
       <nav class="nav_site bg-success p-4">
         <div class="container">
           <section class="nav__bar">
@@ -32,13 +58,13 @@
               <form action="#" class="form-submit">
                 <label for="name" class="name">Enter name</label>
                 <input class="form-control" id="name" type="text"
-                placeholder="enter name ...." required autocomplete="off"">
+                placeholder="enter name ...."  ">
                 <label for="number" class="number">Enter score</label>
-                <input class="form-control" id="number" max="10" type="number"
-                placeholder="enter scroe ...." required autocomplete="off"">
+                <input class="form-control" id="number" required max="10" type="number"
+                placeholder="enter scroe ...."  ">
                 <label for="email" class="email">Enter email</label>
                 <input class="form-control" id="email" type="email"
-                placeholder="enter email ...." required autocomplete="off"">
+                placeholder="enter email ...."  ">
                 <button class="btn bg-info" type="submit">
                   Add information
                 </button>
