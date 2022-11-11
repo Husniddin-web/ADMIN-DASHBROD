@@ -99,7 +99,7 @@ function delUser(id) {
             },
             body: JSON.stringify({})
         })
-    }, 1500);
+    }, 1000);
 }
 
 //== function delete user ==///
