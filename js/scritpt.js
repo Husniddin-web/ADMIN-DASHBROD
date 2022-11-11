@@ -39,10 +39,10 @@ function addUser() {
     const userName = $('#name').value.trim();
     const userScore = $('#number').value.trim();
     const userEmail = $('#email').value.trim();
-    if (userName.length === 0 || userEmail.length === 0 || userScore === 0) {
+    if (userName.length === 0 || userEmail.length === 0) {
         slide('Malumot Yetarli Emas', 'crimson');
         setTimeout(() => {
-            $('.toastify').classList.add="slide";
+            $('.toastify').classList.add('slide');
         }, 2000)
     } else {
         slide('Muvoffaqaytli qoshildi', 'lime');
@@ -128,7 +128,7 @@ function updateUser() {
     const userName = $('#userEdit').value.trim();
     const userScore = $('#userScore').value.trim();
     const userEmail = $('#userEmail').value.trim();
-    if (userName.length === 0 || userEmail.length === 0 || userScore === 0) {
+    if (userName.length === 0 || userEmail.length === 0) {
         slide('Malumot Yetarli Emas', 'crimson');
         setTimeout(() => {
             $('.toastify').classList.add('slide');
