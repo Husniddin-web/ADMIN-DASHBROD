@@ -2,6 +2,7 @@ body{
     scroll-behavior: smooth;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow-x: hidden;
+    background-color: aliceblue;
 }
 html{
     overflow: hidden;
@@ -89,4 +90,27 @@ label{
 }
 .none{
     transform: translateY(-200%);
+}
+
+
+.nav_site{
+    background: rgb(110,149,223);
+    background: linear-gradient(90deg, rgba(110,149,223,1) 1%, rgba(81,156,214,1) 29%, rgba(0,212,255,1) 100%);  
+}
+.nav__site{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar{
+    display: flex;
+    gap: 20px;
+}
+.nav__logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav__bar-title{
+    color: aliceblue;
+    font-family: monospace;
 }

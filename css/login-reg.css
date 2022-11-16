@@ -1,0 +1,43 @@
+.reg__page{
+    margin: 150px auto;
+    max-width: 500px;
+    height:70%;
+    padding: 30px;
+}
+.user-input
+{
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+#login-btn{
+    width: 100%;
+}
+.email,
+.clock{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.4);
+    padding: 4px;
+    border-radius: 5px 0 0 5px;
+}
+.body-reg,
+.body-login{
+    background-color: rgba(0, 0, 0,0.4);
+    backdrop-filter: blur(10px);
+}
+.alert{
+    position: relative;
+    width: 35%;
+    margin: 60px  auto;
+    transition: all .4s ease;
+}
+.hide-toast{
+    transform: translateY(-250%);
+}
+.eyes{
+    position: absolute;
+    right: 15px;
+    top: 62px;
+    font-size: 20px;
+}
